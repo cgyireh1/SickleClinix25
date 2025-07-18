@@ -72,7 +72,7 @@ SickleClinix25/
 
 ````
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 🔹 Clone the repo
 ```bash
@@ -80,7 +80,7 @@ git clone https://github.com/cgyireh1/SickleClinix25.git
 cd SickleClinix25
 ````
 
-### 🔹 Run the Mobile App
+### Run the Mobile App
 
 ```bash
 cd app
@@ -88,7 +88,7 @@ flutter pub get
 flutter run
 ```
 
-### 🔹 Train or Test Model
+###  Train or Test Model
 
 ```bash
 cd notebooks
