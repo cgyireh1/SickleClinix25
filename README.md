@@ -60,8 +60,6 @@ SickleClinix25/
 
 ├── assets/                                        # Images, logos, heatmaps
 
-│
-
 ├── README.md
 
 ├── requirements.txt                              # Python packages
