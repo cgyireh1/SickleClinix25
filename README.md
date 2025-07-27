@@ -1,7 +1,7 @@
 
 # SickleClinix
 
-**An AI-powered mobile diagnostic app for early detection and triage of Sickle Cell Disease (SCD)**
+**An ML-powered mobile diagnostic app to aid with the early detection of Sickle Cell Disease (SCD) with explainable analysis**
 
 
 ## Overview
