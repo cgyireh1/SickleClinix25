@@ -6,7 +6,7 @@
 
 ## Overview
 
-**SickleClinix** is a mobile-first healthcare application designed to assist in the early detection and management of Sickle Cell Disease, particularly in under-resourced healthcare settings. The system leverages computer vision, machine learning, and mobile technology to analyze blood smear images, predict SCD presence, assess severity, and provide tailored triage support.
+**SickleClinix** is a mobile-first healthcare application designed to assist in the early detection and management of Sickle Cell Disease, particularly in under-resourced healthcare settings. The system leverages computer vision, machine learning, and mobile technology to analyze blood smear images, predict SCD presence, with a Grad-CAM for explainability((Helps healthcare workers to know which part of the image influenced the model's decision).
 
 
 ## Objectives
