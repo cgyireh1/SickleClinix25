@@ -11,11 +11,10 @@
 
 ## Objectives
 
-- Detect Sickle Cell Disease using a trained CNN on blood smear images.
+- Detect Sickle Cell Disease using a trained CNN(MobileNetV2) on blood smear images.
 - Provide explainable predictions using Grad-CAM.
-- Enable role-based access (doctor, nurse, lab technician, admin).
-- Offer offline-first support with optional cloud sync.
-- Deliver triage, historical tracking, reports, and educational materials.
+- Offer offline-first support with cloud sync.
+- Deliver historical tracking.
 - Improve healthcare accessibility for vulnerable populations.
 
 
@@ -25,9 +24,7 @@
 - **Grad-CAM Explainability** for heatmap overlays.
 - **Flutter Mobile App** with modern UI.
 - **Offline Support** with local storage.
-- **Role-based Dashboards** and secure login system.
-- **Triage & Severity Assessment** from image results.
-- **Reports, History, Notifications, Educational Content**
+- **History, Notifications, Reports*
 
 
 ## Tech Stack
@@ -38,43 +35,29 @@
 | ML Models      | TensorFlow, Keras, TFLite                    |
 | Backend        | Python, Flask                                |
 | Explainability | Grad-CAM, OpenCV                             |
-| Data           | Augmented Blood Smear Dataset                |
+| Data           | albumentations,tensorflow(ImageDataGenerator)|
 | Cloud          | Firebase                                     |
 
 
 ## Folder Structure
+```
 
 SickleClinix25/
-
-│
-
-├── app/                                           # Flutter app source code
-
-├── model/                                         # Trained models
-
-├── backend/                                       # Flask API
-
-├── notebooks/                                     # Training & evaluation Notebooks
-
-├── docs/                                          # Project proposal, report, ethics, user manual
-
-├── assets/                                        # Images, logos, heatmaps
-
+├── app/                  # Flutter app source code
+├── model/                # Trained models
+├── backend/              # Flask API for predictions
+├── notebooks/            # Jupyter Notebooks for training and evaluation
+├── assets/               # Images
 ├── README.md
-
-├── requirements.txt                              # Python packages
-
-├── pubspec.yaml                                  # Flutter dependencies
-
+├── requirements.txt      # Python dependencies for backend and training
+├── pubspec.yaml          # Flutter dependencies
 ├── .gitignore
-
 └── LICENSE
-
-````
+```
 
 ## Getting Started
 
-### 🔹 Clone the repo
+### Clone the repo
 ```bash
 git clone https://github.com/cgyireh1/SickleClinix25.git
 cd SickleClinix25
@@ -92,34 +75,68 @@ flutter run
 
 ```bash
 cd notebooks
-# Open and run MobileNetV2/Grad-CAM.ipynb
 ```
+Open and run the cells in SickleClinix_model_training_evaluation.ipynb
 
-## 📊 Model Performance
+## Model Performance
 
 | Metric    | Value |
 | --------- | ----- |
-| Accuracy  | 0.95 |
-| Precision | 0.94  |
-| Recall    | 0.96  |
-| ROC-AUC   | 0.99 |
+| Accuracy  | 0.95  |
+| Precision | 0.95  |
+| Recall    | 0.95  |
+| ROC-AUC   | 0.99  |
 
+Here's a clear and professional way to describe each of the visuals in your README file. These explanations are tailored for a capstone project or machine learning app like **SickleClinix**, and they balance technical depth with clarity for both academic and non-technical audiences.
+
+---
+
+### Classification Report
 
 <img width="435" height="182" alt="class-report" src="https://github.com/user-attachments/assets/32f274a6-7b66-456a-acfa-93dc3d1c9bbc" />
 
+This classification report provides a detailed breakdown of the model’s performance on the test dataset. Key metrics include:
+
+* **Precision**: Measures how many of the predicted positives are actually positive.
+* **Recall**: Indicates how many actual positives were correctly identified.
+* **F1-Score**: Harmonic mean of precision and recall, representing the balance between the two.
+* **Support**: The number of true instances for each class.
+
+High precision and recall values for both `Normal` and `Sickle` classes demonstrate the model's strong ability to distinguish between healthy and sickled cells.
+
+
+### Confusion Matrix
 
 <img width="400" height="400" alt="cm-1" src="https://github.com/user-attachments/assets/622dcc88-37c3-405a-ab36-ba197bb5564f" />
 
+The confusion matrix visualizes the true vs. predicted classifications. It helps identify where the model performs well and where it misclassifies:
+
+* **True Positives/Negatives (Green--diagonal)**: Correctly predicted cell images.
+* **False Positives/Negatives (Off-diagonal)**: Misclassifications.
+
+A low number of off-diagonal errors indicates reliable model predictions, which is critical in clinical settings where accuracy is vital.
+
+
+### Grad-CAM Visualization
 
 <img width="989" height="364" alt="grad-cam" src="https://github.com/user-attachments/assets/7f8a36c0-ea40-49b0-917e-dcc9857735e7" />
 
+Grad-CAM (Gradient-weighted Class Activation Mapping) provides visual explainability by highlighting the areas in the blood smear image that influenced the model’s prediction.
+
+* Redder regions represent higher importance.
+* This helps clinicians or researchers verify that the model is focusing on relevant regions, such as malformed or sickled red blood cells.
+
+Incorporating Grad-CAM improves trust and transparency in the model, which is especially important in medical diagnostics.
+
+
 ## Ethical Considerations
 
-This project follows the **IEEE Code of Ethics**, **Belmont Report**, and **local CHRPE/IRB** guidelines. All predictions include confidence scores and disclaimers, ensuring informed use in healthcare settings.
+This project follows the **IEEE Code of Ethics** guidelines. 
+
+All predictions include confidence scores and disclaimers, ensuring informed use in healthcare settings.
 
 
 ##  Author
-
 **Caroline Gyireh**
 
 GitHub: [@cgyireh1](https://github.com/cgyireh1)
@@ -136,5 +153,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 * Supervisors: Samiratu Ntoshi
 * Institution: African Leadership University
-* Data Source: Kaggle
+* Data: Kaggle (Florence Tushabe)
 * OpenAI, TensorFlow, Flutter, Firebase
