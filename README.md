@@ -44,8 +44,7 @@
 
 SickleClinix25/
 ├── app/                  # Flutter app source code
-├── model/                # Trained models
-├── backend/              # Flask API for predictions
+├── Grad-CAM backend/     # Flask API for grad-cam
 ├── notebooks/            # Jupyter Notebooks for training and evaluation
 ├── assets/               # Images
 ├── README.md
