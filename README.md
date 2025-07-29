@@ -49,7 +49,6 @@ SickleClinix25/
 ├── assets/               # Images
 ├── README.md
 ├── requirements.txt      # Python dependencies for backend and training
-├── pubspec.yaml          # Flutter dependencies
 ├── .gitignore
 └── LICENSE
 ```
