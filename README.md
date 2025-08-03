@@ -64,7 +64,7 @@ cd SickleClinix25
 ### Run the Mobile App
 
 ```bash
-cd app
+cd app/capstone
 flutter pub get
 flutter run
 ```
