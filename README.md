@@ -138,7 +138,7 @@ All predictions include confidence scores and disclaimers, ensuring informed use
 
 GitHub: [@cgyireh1](https://github.com/cgyireh1)
 
-Email Me @: [c.gyireh@alustudent.com](c.gyireh@alustudent.com)
+Email: [c.gyireh@alustudent.com](c.gyireh@alustudent.com)
 
 
 ## License
