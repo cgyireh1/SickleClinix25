@@ -87,7 +87,6 @@ Open and run the cells in SickleClinix_model_training_evaluation.ipynb
 
 Here's a clear and professional way to describe each of the visuals in your README file. These explanations are tailored for a capstone project or machine learning app like **SickleClinix**, and they balance technical depth with clarity for both academic and non-technical audiences.
 
----
 
 ### Classification Report
 
