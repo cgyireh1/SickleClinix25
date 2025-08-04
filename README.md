@@ -1,13 +1,10 @@
-
 # SickleClinix
 
 **An ML-powered mobile diagnostic app to aid with the early detection of Sickle Cell Disease (SCD) with explainable analysis**
 
-
 ## Overview
 
 **SickleClinix** is a mobile-first healthcare application designed to assist in the early detection and management of Sickle Cell Disease, particularly in under-resourced healthcare settings. The system leverages computer vision, machine learning, and mobile technology to analyze blood smear images, predict SCD presence, with a Grad-CAM for explainability (Helps healthcare workers to know which part of the image influenced the model's decision).
-
 
 ## Objectives
 
@@ -17,7 +14,6 @@
 - Deliver historical tracking.
 - Improve healthcare accessibility for vulnerable populations.
 
-
 ## Core Features
 
 - **Image Classification (Normal vs Sickle)** using MobileNetV2.
@@ -26,20 +22,19 @@
 - **Offline Support** with local storage.
 - **History, Notifications, Reports**.
 
-
 ## Tech Stack
 
-| Layer          | Technology                                   |
-|----------------|----------------------------------------------|
-| Mobile App     | Flutter, Dart                                |
-| ML Models      | TensorFlow, Keras, TFLite                    |
-| Backend        | Python, Flask                                |
-| Explainability | Grad-CAM, OpenCV                             |
-| Data           | albumentations,tensorflow(ImageDataGenerator)|
-| Cloud          | Firebase                                     |
-
+| Layer          | Technology                                    |
+| -------------- | --------------------------------------------- |
+| Mobile App     | Flutter, Dart                                 |
+| ML Models      | TensorFlow, Keras, TFLite                     |
+| Backend        | Python, Flask                                 |
+| Explainability | Grad-CAM, OpenCV                              |
+| Data           | albumentations,tensorflow(ImageDataGenerator) |
+| Cloud          | Firebase                                      |
 
 ## Folder Structure
+
 ```
 
 SickleClinix25/
@@ -56,10 +51,11 @@ SickleClinix25/
 ## Getting Started
 
 ### Clone the repo
+
 ```bash
 git clone https://github.com/cgyireh1/SickleClinix25.git
 cd SickleClinix25
-````
+```
 
 ### Run the Mobile App
 
@@ -69,11 +65,14 @@ flutter pub get
 flutter run
 ```
 
-###  Train or Test Model
+Check readme in app/capstone folder for add details
+
+### Train or Test Model
 
 ```bash
 cd notebooks
 ```
+
 Open and run the cells in SickleClinix_model_training_evaluation.ipynb
 
 ## Model Performance
@@ -87,20 +86,18 @@ Open and run the cells in SickleClinix_model_training_evaluation.ipynb
 
 Here's a clear and professional way to describe each of the visuals in your README file. These explanations are tailored for a capstone project or machine learning app like **SickleClinix**, and they balance technical depth with clarity for both academic and non-technical audiences.
 
-
 ### Classification Report
 
 <img width="435" height="182" alt="class-report" src="https://github.com/user-attachments/assets/32f274a6-7b66-456a-acfa-93dc3d1c9bbc" />
 
 This classification report provides a detailed breakdown of the model’s performance on the test dataset. Key metrics include:
 
-* **Precision**: Measures how many of the predicted positives are actually positive.
-* **Recall**: Indicates how many actual positives were correctly identified.
-* **F1-Score**: Harmonic mean of precision and recall, representing the balance between the two.
-* **Support**: The number of true instances for each class.
+- **Precision**: Measures how many of the predicted positives are actually positive.
+- **Recall**: Indicates how many actual positives were correctly identified.
+- **F1-Score**: Harmonic mean of precision and recall, representing the balance between the two.
+- **Support**: The number of true instances for each class.
 
 High precision and recall values for both `Normal` and `Sickle` classes demonstrate the model's strong ability to distinguish between healthy and sickled cells.
-
 
 ### Confusion Matrix
 
@@ -108,11 +105,10 @@ High precision and recall values for both `Normal` and `Sickle` classes demonstr
 
 The confusion matrix visualizes the true vs. predicted classifications. It helps identify where the model performs well and where it misclassifies:
 
-* **True Positives/Negatives (Green--diagonal)**: Correctly predicted cell images.
-* **False Positives/Negatives (Off-diagonal)**: Misclassifications.
+- **True Positives/Negatives (Green--diagonal)**: Correctly predicted cell images.
+- **False Positives/Negatives (Off-diagonal)**: Misclassifications.
 
 A low number of off-diagonal errors indicates reliable model predictions, which is critical in clinical settings where accuracy is vital.
-
 
 ### Grad-CAM Visualization
 
@@ -120,35 +116,32 @@ A low number of off-diagonal errors indicates reliable model predictions, which 
 
 Grad-CAM (Gradient-weighted Class Activation Mapping) provides visual explainability by highlighting the areas in the blood smear image that influenced the model’s prediction.
 
-* Redder regions represent higher importance.
-* This helps clinicians or researchers verify that the model is focusing on relevant regions, such as malformed or sickled red blood cells.
+- Redder regions represent higher importance.
+- This helps clinicians or researchers verify that the model is focusing on relevant regions, such as malformed or sickled red blood cells.
 
 Incorporating Grad-CAM improves trust and transparency in the model, which is especially important in medical diagnostics.
 
-
 ## Ethical Considerations
 
-This project follows the **IEEE Code of Ethics** guidelines. 
+This project follows the **IEEE Code of Ethics** guidelines.
 
 All predictions include confidence scores and disclaimers, ensuring informed use in healthcare settings.
 
+## Author
 
-##  Author
 **Caroline Gyireh**
 
 GitHub: [@cgyireh1](https://github.com/cgyireh1)
 
 Email: [c.gyireh@alustudent.com](c.gyireh@alustudent.com)
 
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
 
-
 ## Acknowledgements
 
-* Supervisors: Samiratu Ntoshi
-* Institution: African Leadership University
-* Data: Kaggle (Florence Tushabe)
-* OpenAI, TensorFlow, Flutter, Firebase
+- Supervisors: Samiratu Ntoshi
+- Institution: African Leadership University
+- Data: Kaggle (Florence Tushabe)
+- OpenAI, TensorFlow, Flutter, Firebase
