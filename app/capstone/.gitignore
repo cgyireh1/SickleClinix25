@@ -41,7 +41,7 @@ windows/build/
 # Web
 web/build/
 
-# Asset/model files (add more as needed)
+# Asset/model files
 assets/models/*.tflite
 assets/models/*.keras
 
@@ -51,7 +51,8 @@ assets/models/*.keras
 *.swp
 .DS_Store
 .idea/
+.env
 
-# Firebase/GoogleService files (uncomment if you don't want to commit these)
-# android/app/google-services.json
-# ios/Runner/GoogleService-Info.plist 
+# Firebase/GoogleService files
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist 
