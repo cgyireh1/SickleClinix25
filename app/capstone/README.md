@@ -48,7 +48,7 @@ A Flutter-based healthcare application designed for sickle cell disease detectio
 
 - **Result Screen**: Display prediction results with confidence scores
 - **Grad-CAM Images**: Visual explanation of model decisions
-- **Clinical Recommendations**: AI-suggested next steps for healthcare workers
+- **Clinical Recommendations**: Suggested next steps for healthcare workers
 - **Save Results**: Store predictions with patient association
 
 ### 5. Data Management
