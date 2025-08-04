@@ -1,0 +1,118 @@
+{
+  "project_info": {
+    "project_number": "508675732931",
+    "project_id": "sickleclinix",
+    "storage_bucket": "sickleclinix.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508675732931:android:e5c74c49ae5c833911b976",
+        "android_client_info": {
+          "package_name": "com.example.capstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508675732931-95ccgojgl44rh8gf34as6po4pr3s2etr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8I7sAWuiY2fw60A4xcpFGQI8jDKdMHx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508675732931-95ccgojgl44rh8gf34as6po4pr3s2etr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "508675732931-b9bqon3iocf2bihnvc5usbebbe7puhi4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.capstone"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508675732931:android:41a8efa64614e99711b976",
+        "android_client_info": {
+          "package_name": "com.sickleclinix.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508675732931-95ccgojgl44rh8gf34as6po4pr3s2etr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8I7sAWuiY2fw60A4xcpFGQI8jDKdMHx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508675732931-95ccgojgl44rh8gf34as6po4pr3s2etr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "508675732931-b9bqon3iocf2bihnvc5usbebbe7puhi4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sickleclinix.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508675732931:android:3dade34179ff7bb511b976",
+        "android_client_info": {
+          "package_name": "sickle.clinix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508675732931-95ccgojgl44rh8gf34as6po4pr3s2etr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8I7sAWuiY2fw60A4xcpFGQI8jDKdMHx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508675732931-95ccgojgl44rh8gf34as6po4pr3s2etr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "508675732931-b9bqon3iocf2bihnvc5usbebbe7puhi4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.capstone"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

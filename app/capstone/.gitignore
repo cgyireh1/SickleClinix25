@@ -1,0 +1,57 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+.pub/
+build/
+
+# iOS/Xcode related
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/App.framework
+ios/Flutter/ephemeral/
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/Runner.xcodeproj/project.xcworkspace/
+ios/Runner.xcodeproj/xcuserdata/
+ios/Runner.xcworkspace/xcuserdata/
+ios/Runner/GeneratedPluginRegistrant.*
+
+# Android/IntelliJ related
+android/.gradle/
+android/.idea/
+android/local.properties
+android/app/build/
+android/build/
+
+# VS Code
+.vscode/
+
+# macOS
+macos/Flutter/ephemeral/
+macos/Pods/
+macos/build/
+
+# Linux
+linux/build/
+
+# Windows
+windows/build/
+
+# Web
+web/build/
+
+# Asset/model files (add more as needed)
+assets/models/*.tflite
+assets/models/*.keras
+
+# Misc
+*.log
+*.tmp
+*.swp
+.DS_Store
+.idea/
+
+# Firebase/GoogleService files (uncomment if you don't want to commit these)
+# android/app/google-services.json
+# ios/Runner/GoogleService-Info.plist 
