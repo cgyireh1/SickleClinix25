@@ -76,7 +76,7 @@ A Flutter-based healthcare application designed for sickle cell disease detectio
 
 ### For Healthcare Workers:
 
-1. **Initial Setup**: Download app → Create account → Select facility
+1. **Initial Setup**: Download app → Create account
 2. **Daily Workflow**:
    - Register new patients
    - Capture blood smear images
@@ -88,7 +88,7 @@ A Flutter-based healthcare application designed for sickle cell disease detectio
 
 ### For Rural Healthcare:
 
-- **Low Connectivity**: App functions completely offline
+- **Low Connectivity**: App functions offline
 - **Simple Interface**: Designed for healthcare professionals
 - **Reliable Results**: Consistent ML model performance
 - **Data Security**: Encrypted local storage with cloud backup
@@ -98,13 +98,7 @@ A Flutter-based healthcare application designed for sickle cell disease detectio
 ### Single Patient Analysis:
 
 ```
-Patient Registration → Image Capture → AI Analysis → Results Review → Save & Export
-```
-
-### Batch Processing:
-
-```
-Multiple Images → Bulk Analysis → Summary Report → Individual Results → Export All
+Patient Registration → Image Capture → AI Analysis → Results Review → Save
 ```
 
 ### Data Synchronization:
@@ -140,16 +134,9 @@ Local Storage → Connectivity Check → Firebase Sync → Conflict Resolution �
 To build an APK for distribution:
 
 ```bash
-# Debug build (for testing)
+# Debug build
 flutter build apk --debug
 
-# Release build (for production)
+# Release build
 flutter build apk --release
-
-# Split APKs by architecture (smaller downloads)
-flutter build apk --split-per-abi --release
 ```
-
-The APK will be generated at: `build/app/outputs/flutter-apk/app-release.apk`
-
-https://drive.google.com/file/d/1BpUeyMVodZEpuPlSYew0wywne5IbgzIy/view?usp=drive_link
